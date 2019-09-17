@@ -11,7 +11,7 @@ const initialState = {
     searchActive: false,
 };
 
-const newsReducer = (state = initialState, action) => {
+const musicReducer = (state = initialState, action) => {
     switch (action.type) {
         case SET_TRACKS:
             return {
@@ -31,8 +31,8 @@ const newsReducer = (state = initialState, action) => {
     }
 }
 
-const setTracks = (tracks, next) => ({ type: SET_TRACKS, tracks, next });
-const addTracks = (tracks, next) => ({ type: ADD_TRACKS, tracks, next });
+export const setTracks = (tracks, next) => ({ type: SET_TRACKS, tracks, next });
+export const addTracks = (tracks, next) => ({ type: ADD_TRACKS, tracks, next });
 
 export const setTracksThunkCreator = (url) => async (dispatch) => {
     dispatch(togglePreloader('musicPreloader', false));
@@ -52,4 +52,4 @@ export const addTrackThunkCreator = (url) => async (dispatch) => {
     }
 }
 
-export default newsReducer;
+export default musicReducer;
