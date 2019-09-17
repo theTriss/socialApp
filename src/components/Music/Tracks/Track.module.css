@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
+
+.track {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: repeat(2, 50px);
+    grid-template-areas: 'image name'
+                        'image audio';
+    margin: 2em 0; 
+    background-color: rgb(252, 248, 248);
+}
+
+.track__img {
+    grid-area: image;
+}
+
+.track__img img {
+    width: 100%;
+}
+
+.track__name {
+    grid-area: name;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+    font-family: 'Neucha', cursive;
+    font-size: 1.25em;
+}
+
+.track__audio {
+    grid-area: audio;
+    height: 50px;
+    width: 80%;
+    margin: 0 auto;
+    outline: none;
+}

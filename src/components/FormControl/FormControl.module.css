@@ -1,0 +1,24 @@
+.inputControl {
+    width: 200px;
+    outline: none;
+}
+
+.textareaControl {
+    width: 200px;
+    height: 70px;
+    outline: none;
+    resize: none;
+}
+
+.checkboxControl {
+
+}
+
+.inputError {
+    border: 2px solid rgb(255, 0, 0);
+    outline: none;
+}
+
+.spanError {
+    color: rgb(255, 0, 0);
+}

@@ -1,0 +1,21 @@
+.paginationBlock {
+    display: flex;
+    justify-content: center;
+}
+
+.paginationBlock .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    margin-bottom: .5em;
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.paginationBlock .pagination img {
+    width: 100%;
+    height: 100px
+}

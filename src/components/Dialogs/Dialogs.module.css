@@ -1,0 +1,58 @@
+a {
+    color: #000;
+}
+
+.dialogsPage {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    font: 1.25em 'Arial'
+}
+
+.messages {
+    padding: 0.625em;
+}
+
+.messages .messageField {
+    height: 300px;
+    margin-bottom: 1em;
+    overflow-y: scroll;
+}
+
+.messages .messageField::-webkit-scrollbar, .dialogs::-webkit-scrollbar {
+    width: 8px;
+}
+
+.messages .messageField::-webkit-scrollbar-track, .dialogs::-webkit-scrollbar-track {
+    background-color: rgb(252, 244, 244);
+}
+
+.messages .messageField::-webkit-scrollbar-button, .dialogs::-webkit-scrollbar-button {
+    background-color: rgb(180, 178, 178);
+}
+
+.messages .messageField::-webkit-scrollbar-button:start, .dialogs::-webkit-scrollbar-button:start {
+    border-radius: 50% 50% 0 0 ;
+}
+
+.messages .messageField::-webkit-scrollbar-button:end, .dialogs::-webkit-scrollbar-button:end {
+    border-radius: 0 0 50% 50%;
+}
+
+.messages .messageField::-webkit-scrollbar-thumb, .dialogs::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+
+.messages textarea {
+    height: 50px;
+    width: 100%;
+    padding: .5em;
+    resize: none;
+    outline: none;
+}
+
+.dialogs {
+    height: 400px;
+    overflow-y: scroll;
+    padding: 0.625em;
+}
+

@@ -1,0 +1,31 @@
+aside {
+    padding: .625em 1.25em;
+    grid-area: aside;
+    background-color: #05b66a;
+}
+
+aside  nav  menu {
+    margin: 0;
+    padding: 0;
+}
+
+aside  nav  menu  li {
+    list-style-type: none;
+    font: 1.5em 'Arial';
+}
+
+aside  nav  menu  li  a {
+    color: #fff;
+}
+
+aside  nav  menu  li  a.activeLink {
+    color: gold;
+}
+
+aside  nav  menu  li::first-letter {
+    text-transform: uppercase;
+}
+
+aside nav  menu  li:last-of-type {
+    margin-top: 1.25em;
+}

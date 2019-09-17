@@ -1,0 +1,14 @@
+header {
+    grid-area: header;
+    background-color: #05b66a;
+}
+
+.login {
+    font: 1.25em 'Arial';
+    text-align: right;
+    color: #fff
+}
+
+.login a {
+    color: inherit;
+}

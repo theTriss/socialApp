@@ -1,0 +1,75 @@
+.test {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+.search {
+    width: 100%;
+    padding: 1em;
+    height: 30px;
+    border: 3px solid #cccccc;
+    border-radius: 20px;
+    font-size: 1.5em;
+    outline: none;
+}
+
+.searchBlock, .searchParamBlock {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.searchBtn {
+    position: absolute;
+    right: 3em;
+    top: .1em;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 2em; 
+    cursor: pointer;
+}
+
+.searchParamBlock {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5em;
+    justify-content: space-around;
+}
+
+.searchParamBlock .searchParam {
+    position: relative;
+}
+
+.searchParamBlock .searchParam::after {
+    content: '\2B9B';
+    position: absolute;
+    right: .5em;
+    font-size: 1.25em;
+    pointer-events: none;
+}
+
+.searchParamBlock .title {
+    margin-right: .5em;
+    font: 1.5em 'Arial';
+}
+
+.searchParamBlock .select {
+    appearance: none;
+    padding-left: .5em;
+    border: 2px solid #ccc;
+    border-radius: .625em;
+    font-size: 1.5em;
+    outline: none;
+    cursor: pointer;
+}
+
+.searchParamBlock .selectCountry {
+    width: 100px;
+}
+
+.searchParamBlock .selectCategory {
+    width: 200px;
+}

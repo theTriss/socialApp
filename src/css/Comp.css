@@ -1,0 +1,26 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.my-app {
+    display: grid;
+    width: 1140px;
+    margin: auto;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 50px auto;
+    grid-template-areas: 'header header'
+                         'aside main';
+    grid-gap: 1.25em;
+}
+
+.main-content {
+    position: relative;
+    grid-area: main;
+    display: grid;
+    grid-gap: 1.25em;
+}

@@ -1,0 +1,44 @@
+.messageField {
+    display: flex;
+    margin-bottom: .2em;
+}
+
+.messageField .date {
+    font-size: .5em;
+}
+
+.messageField .date.right {
+    text-align: end;
+}
+
+.messageField.myMessage {
+    justify-content: flex-end;
+}
+
+.messageField.anotherMessage {
+    justify-content: flex-start;
+}
+
+.messageField button {
+    align-self: center;
+    height: 30px;
+    width: 30px;
+    color:red;
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.messageViewed {
+    max-width: 80%;
+    padding: .7em;
+    background-color: rgb(240, 240, 240);
+}
+
+.messageNotViewed {
+    max-width: 80%;
+    padding: .7em;
+    background-color:rgb(222, 222, 248);
+}
